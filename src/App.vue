@@ -1,6 +1,7 @@
 <template>
     <div id="app">
-        <md-tabs>
+        <title>SixGrid</title>
+        <md-tabs md-align="center">
             <template v-for="(item, index) in tabLocations">
                 <template v-if="item.to != undefined">
                     <md-tab
@@ -32,12 +33,20 @@ export default {
                 },
                 {
                     name: 'Discord',
-                    href: ''
+                    href: 'https://discord.gg/QbxTF9c3AP'
+                },
+                {
+                    name: 'Github',
+                    href: 'https://github.com/sixgrid'
                 },
                 {
                     name: 'Steam',
-                    href: 'https://store.steampowered.com/app/1992810'
-                }
+                    href: 'https://steamcommunity.com/app/1992810'
+                }/*,
+                {
+                    name: 'Roadmap',
+                    href: 'https://trello.com/b/aD9lpQbO/roadmap'
+                }*/
             ]
         }
     }
@@ -51,6 +60,5 @@ export default {
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
-    margin-top: 60px;
 }
 </style>

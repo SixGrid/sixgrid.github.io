@@ -2,3 +2,7 @@
 /config/
 /dist/
 /*.js
+node_modules/**/*
+node_modules/**
+**/vue-devtools/**
+*.d.ts
