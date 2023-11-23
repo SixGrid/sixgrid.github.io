@@ -14,7 +14,7 @@
                 SixGrid
             </div> -->
         </div>
-        <md-button href="https://github.com/sixgrid/sixgrid/releases/latest" class="md-raised md-primary">Download</md-button>
+        <md-button href="https://github.com/sixgrid/sixgrid/releases/latest" class="md-raised md-primary md-btn-lg">Download</md-button>
     </div>
 </template>
 <script>
@@ -48,6 +48,17 @@ export default {
 }
 .epic-image img {
     max-width: min(80vw, 25rem);
+}
 
+.md-btn-lg {
+    --mult: 1.5;
+
+    min-width: calc(88px * var(--mult));
+    height: calc(30px * var(--mult));
+    border-radius: calc(2px * var(--mult));
+    font-size: calc(14px * var(--mult));
+    margin: calc(6px * var(--mult)) calc(8px * var(--mult));
+
+    text-transform: none;
 }
 </style>
